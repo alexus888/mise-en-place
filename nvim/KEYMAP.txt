@@ -1,0 +1,27 @@
+CURRENT CHAPTER
+  https://lazyvim-ambitious-devs.phillips.codes/course/chapter-3/
+
+CONCEPTS ────────────────────────────────────────────
+  lowercase/uppercase versions do it BIGGER or OPPOSITE
+  <shift>: opens a "command palette" mode
+
+COMMAND PALETTE ─────────────────────────────────────
+  e <filepath>  open existing or new file to edit
+
+PLUGIN & TOOL MANAGEMENT─────────────────────────────
+  <leader>l     open plugin manager
+  <leader>sk    show all key mappings
+
+EDITING ─────────────────────────────────────────────
+  {count}J      (j)oin line(s) with the line below
+  I             INSERT mode at beginning of line
+  A             INSERT mode at end of line
+  gu{motion}    lowercase over a motion
+  {count}gcc    comment line
+
+NAVIGATION ──────────────────────────────────────────
+  s<pattern>    (s)eek visible pattern in open windows
+  <C-o>         go (o)ut to last place
+  <C-i>         go (i)n to next place
+  [m            jump to start of previous function
+  ]m            jump to start of next function
