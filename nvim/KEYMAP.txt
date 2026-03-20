@@ -20,6 +20,7 @@ EDITING ────────────────────────
   {count}gcc    comment line
 
 NAVIGATION ──────────────────────────────────────────
+  <Space>fm     Mini.files plugin
   s<pattern>    (s)eek visible pattern in open windows
   <C-o>         go (o)ut to last place
   <C-i>         go (i)n to next place
