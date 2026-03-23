@@ -1,0 +1,38 @@
+            USAGE:
+              rg [OPTIONS] PATTERN [PATH ...]
+
+            SEARCH OPTIONS:
+              -i, --ignore-case               Case (i)nsensitive search.
+              -S, --smart-case                (S)mart case search.
+
+              -w, --word-regexp               Surround your pattern with word boundaries -> '\wcat\w' only matches "cat" and not "catch".
+              -F, --fixed-strings             Treat all patterns as (F)ixed-string literals -> '$1.99' does not trigger any regex action.
+
+              -v, --invert-match              Do the in(v)erse and only print lines that DO NOT match the given pattern.
+
+            FILTER OPTIONS:
+              --type-list                     Show all supported file types for `-t` and `-T`
+              -t, --type=TYPE                 ONLY search within files matching a type. You can pass this option multiple times.
+              -T, --type-not=TYPE             DO NO(T) search withinfiles matching TYPE. You can pass this option multiple times.
+
+              -., --hidden                    Search hidden files and directories (aka dotfiles).
+              --no-ignore                     Don't use ignore files.
+
+              -g, --glob=GLOB                 Include or exclude file paths.
+              --iglob=GLOB                    Include/exclude paths case insensitively.
+
+            OUTPUT OPTIONS:
+              --vimgrep                       Print results as "filepath:line-number:column:line"
+              --passthru                      Print both matching and non-matching lines.
+              --trim                          Trim prefix whitespace from matches.
+              --json                          Show search results in a JSON Lines format.
+
+              -o, --only-matching             Print (o)nly matched parts of a line.
+              -r, --replace=TEXT              Replace matches with the given text. Use for outputting specific (r)egex groups.
+
+              -B=NUM,                         Show NUM lines (B)efore each match.
+              -C=NUM,                         Show NUM lines of (C)ontext before AND after each match.
+              -A=NUM,                         Show NUM lines (A)fter each match.
+
+              -N, --no-line-number            Suppress line numbers.
+              -I, --no-filename               Suppress the path with each matching line.
