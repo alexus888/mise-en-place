@@ -3,6 +3,10 @@ return {
   opts = {
     picker = {
       sources = {
+        files = {
+          hidden = true,
+          ignored = false, -- still respect .gitignore
+        },
         explorer = {
           include = {
             ".gitignore",
